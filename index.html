@@ -1,0 +1,531 @@
+<!doctype HTML>
+<html>
+<!-- If you're reading this, check out this really nice website. They gave great tutorials to code this. Link: https://codepen.io/learningcode/post/customize-a-google-form-for-your-website -->
+
+
+<head>
+    <!-- Mandatory -->
+    <meta lang="eng">
+    <meta charset="UTF-8">
+    <title>Wellington Have Your Say</title>
+    <meta name="description" content="Wellington Have Your Say.">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap JavaScript Plugins -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- Scripts -->
+    <script src="scripts/revealsurvey.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
+
+    <!-- Our stylesheet (aka the most important)-->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- Twitter Support -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@grantrobertson1" />
+    <meta name="twitter:title" content="Take the Wellington Wellbeing Survey" />
+    <meta name="twitter:description" content="Share your views so the Government can improve our wellbeing." />
+    <meta name="twitter:image" src="images/heroshot.jpg" />
+
+</head>
+
+
+
+<body>
+    <header>
+        <img class="fullwidth headerimage" src="images/header.jpg">
+        <section class="container">
+            <h1>Wellington Wellbeing Survey</h1>
+
+            <section class="row">
+                <img class="heroshot col-lg-6 col-md-6 col-sm-12 col-xs-12" src="images/heroshot.jpg">
+                <section class="headertext col-lg-6 col-md-6 col-sm-12 col-xs-12" title="message from grant">
+                    <p>Wellington is well known for its arts, coffee and thriving small businesses. But how do we do in promoting people’s wellbeing? With Budget 2019 focusing on the wellbeing of all New Zealanders, I want to hear from you about how Wellington is doing in the wellbeing of our people, environment, community and infrastructure. With your input, I can better represent you in Government to improve the wellbeing of Wellingtonians and New Zealanders alike.<br> – Grant</p>
+                    <button id="start"><h4>Begin Survey</h4></button>
+                </section>
+            </section>
+        </section>
+
+    </header>
+
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSed37n3eJS6lVHOhS12aFVoBJnZbhjjXE5kZk6h96xCwC-QOQ/formResponse">
+
+        <section id="content" class="content" title="Content">
+
+            <!-- First Section -->
+            <section class="sectioncontainer" title="Natural Wellbeing">
+                <!-- Sticky Bit -->
+                <section class="sticky overlay">
+                    <img class="fullwidth sectionimage" src="images/natural.jpg">
+
+                    <!-- Description -->
+                    <section class="container">
+                        <section class="row">
+                            <section class="description col-lg-4 col-md-12 col-sm-12 col-xs-12" title="Description">
+                                <h2>Our Environmental Wellbeing</h2>
+                                <p>Our natural places in the heart of Wellington make us stand out as a green capital. From the Town Belt to our playgrounds and native sanctuaries, it is important to know how our natural spaces affect our wellbeing.</p>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+
+                <!-- Questions -->
+                <section title="Questions">
+                    <section class="container">
+                        <section class="row">
+                            <section class="col-lg-5"></section>
+
+                            <section class="col-lg-7 col-md-12 col-sm-12 col-xs-12 formcontainer">
+
+                                <section class="question">
+                                    <h3 class="qtitle">How often do you use parks in Wellington?</h3>
+                                    <input type="radio" name="entry.2083584936" id="park1" value="Never" />
+                                    <label for="park1"><p>Never</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.2083584936" id="park2" value="Less than once a month" />
+                                    <label for="park2"><p>Less than once a month</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.2083584936" id="park3" value="About once a month" />
+                                    <label for="park3"><p>About once a month</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.2083584936" id="park4" value="About once a week" />
+                                    <label for="park4"><p>About once a week</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.2083584936" id="park5" value="More than once a week" />
+                                    <label for="park5"><p>More than once a week</p></label>
+                                </section>
+
+                                <section class="question">
+                                    <h3 class="qtitle">How well do we preserve our natural spaces?</h3>
+                                    <section class="row slidelabel">
+                                        <h4 class="col slidebad">Poorly</h4>
+                                        <h4 class="col slidegood">Very Well</h4>
+                                    </section>
+                                    <input class="textarea slider" name="entry.409881618" type="range" min="1" max="10" step="1">
+                                </section>
+
+                                <section class="question">
+                                    <h3 class="qtitle">Do we need more natural spaces in Wellington?</h3>
+                                    <input type="radio" name="entry.984668159" id="morenature1" value="No" />
+                                    <label for="morenature1"><p>No</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.984668159" id="morenature2" value="We need some more" />
+                                    <label for="morenature2"><p>We need some more</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.984668159" id="morenature3" value="We need a lot more" />
+                                    <label for="morenature3"><p>We need a lot more</p></label>
+                                    <br>
+                                </section>
+
+                                <section class="question">
+                                    <h3 class="qtitle">Do you have further feedback on our environmental wellbeing?</h3>
+                                    <textarea class="textarea" name="entry.2077460614" id="naturalfeedback"></textarea>
+                                </section>
+
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+            </section>
+
+            <!-- Second Section -->
+            <section class="sectioncontainer" title="Community Wellbeing">
+                <!-- Sticky Bit -->
+                <section class="sticky overlay">
+                    <img class="fullwidth sectionimage" src="images/community.jpg">
+
+                    <!-- Description -->
+                    <section class="container">
+                        <section class="row">
+                            <section class="description col-lg-4 col-md-12 col-sm-12 col-xs-12" title="Description">
+                                <h2>Our Community Wellbeing</h2>
+                                <p>Being connected to others in our communities is an important foundation for living a fulfilling life. How do you feel about the strength of your communities and Wellington’s culture?</p>
+                            </section>
+                        </section>
+                    </section>
+
+                </section>
+
+                <!-- Questions -->
+                <section title="Questions">
+                    <section class="container">
+                        <section class="row">
+                            <section class="col-lg-5"></section>
+
+                            <section class="col-lg-7 col-md-12 col-sm-12 col-xs-12 formcontainer">
+
+                                <section class="question">
+                                    <h3 class="qtitle">How often do you attend community events in Wellington?</h3>
+                                    <input type="radio" name="entry.465942507" id="events1" value="Never" />
+                                    <label for="events1"><p>Never</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.465942507" id="events2" value="Less than once a month" />
+                                    <label for="events2"><p>Less than once a month</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.465942507" id="events3" value="About once a month" />
+                                    <label for="events3"><p>About once a month</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.465942507" id="events4" value="About once a week" />
+                                    <label for="events4"><p>About once a week</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.465942507" id="events5" value="More than once a week" />
+                                    <label for="events5"><p>More than once a week</p></label>
+                                </section>
+
+                                <section class="question">
+                                    <h3 class="qtitle">How connected do you feel to Wellington's culture?</h3>
+                                    <section class="row slidelabel">
+                                        <h4 class="col slidebad">Not connected</h4>
+                                        <h4 class="col slidegood">Very connected</h4>
+                                    </section>
+                                    <input class="textarea slider" name="entry.478688887" type="range" min="1" max="10" step="1">
+                                </section>
+
+                                <section class="question">
+                                    <h3 class="qtitle">How often do you see Māori culture celebrated in Wellington?</h3>
+                                    <input type="radio" name="entry.874475243" id="Māori1" value="Never" />
+                                    <label for="Māori1"><p>Never</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.874475243" id="Māori2" value="Not often" />
+                                    <label for="Māori2"><p>Not often</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.874475243" id="Māori3" value="Sometimes" />
+                                    <label for="Māori3"><p>Sometimes</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.874475243" id="Māori4" value="Often" />
+                                    <label for="Māori4"><p>Often</p></label>
+                                </section>
+
+                                <section class="question">
+                                    <h3 class="qtitle">Do you have further feedback on our community wellbeing?</h3>
+                                    <textarea class="textarea" name="entry.2087140449" id="communityfeedback"></textarea>
+                                </section>
+
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+            </section>
+
+            <!-- Third Section -->
+            <section title="Personal Wellbeing">
+                <!-- Sticky Bit -->
+                <section class="sticky overlay">
+                    <img class="fullwidth sectionimage" src="images/personal.jpg">
+
+                    <!-- Description -->
+                    <section class="container">
+                        <section class="row">
+                            <section class="description col-lg-4 col-md-12 col-sm-12 col-xs-12" title="Description">
+                                <h2>Our Personal Wellbeing</h2>
+                                <p>Having access to services which support our skills, physical and mental health is important for personal wellbeing. Are our services working to support everyone in Wellington?</p>
+                            </section>
+                        </section>
+                    </section>
+
+                </section>
+
+                <!-- Questions -->
+                <section title="Questions">
+                    <section class="container">
+                        <section class="row">
+                            <section class="col-lg-5"></section>
+
+                            <section class="col-lg-7 col-md-12 col-sm-12 col-xs-12 formcontainer">
+
+                                <section class="question">
+                                    <h3 class="qtitle">How well do we take care of our most vulnerable?</h3>
+                                    <section class="row slidelabel">
+                                        <h4 class="col slidebad">Not well</h4>
+                                        <h4 class="col slidegood">Very Well</h4>
+                                    </section>
+                                    <input class="textarea slider" name="entry.1743962335" type="range" min="1" max="10" step="1">
+                                </section>
+
+                                <section class="question">
+                                    <h3 class="qtitle">Is visiting the GP affordable and accessible?</h3>
+                                    <input type="radio" name="entry.849276111" id="GP1" value="Yes" />
+                                    <label for="GP1"><p>Yes</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.849276111" id="GP2" value="No" />
+                                    <label for="GP2"><p>No</p></label>
+                                </section>
+
+                                <section class="question">
+                                    <h3 class="qtitle">Have you had difficulty accessing any of these support services?</h3>
+                                    <input type="checkbox" name="entry.1860568622" id="services1" value="Housing NZ" />
+                                    <label for="services1"><p>Housing New Zealand</p></label>
+                                    <br>
+                                    <input type="checkbox" name="entry.1860568622" id="services2" value="Doctors visit" />
+                                    <label for="services2"><p>Doctor/Hospital</p></label>
+                                    <br>
+                                    <input type="checkbox" name="entry.1860568622" id="services3" value="Mental health services" />
+                                    <label for="services3"><p>Mental health services</p></label>
+                                    <br>
+                                    <input type="checkbox" name="entry.1860568622" id="services4" value="Work and Income" />
+                                    <label for="services4"><p>Work and Income</p></label>
+                                </section>
+
+                                <section class="question">
+                                    <h3 class="qtitle">Do you have further feedback on our personal wellbeing?</h3>
+                                    <textarea class="textarea" name="entry.185113365" id="personalfeedback"></textarea>
+                                </section>
+
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+            </section>
+
+
+
+
+            <!-- Fourth Section -->
+            <section title="Asset Wellbeing">
+                <!-- Sticky Bit -->
+                <section class="sticky overlay">
+                    <img class="fullwidth sectionimage" src="images/infrastructure.jpg">
+
+                    <!-- Description -->
+                    <section class="container">
+                        <section class="row">
+                            <section class="description col-lg-4 col-md-12 col-sm-12 col-xs-12" title="Description">
+                                <h2>Our Infrastructure</h2>
+                                <p>Our infrastructure supports us to travel, learn, innovate and participate in society. Are our key services like health, housing and transport fit for purpose?</p>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Questions -->
+                <section title="Questions">
+                    <section class="container">
+                        <section class="row">
+                            <section class="col-lg-5"></section>
+
+                            <section class="col-lg-7 col-md-12 col-sm-12 col-xs-12 formcontainer">
+
+                                <section class="question">
+                                    <h3 class="qtitle">What is your housing situation?</h3>
+                                    <input type="radio" name="entry.1146385513" id="ht1" value="Own a house, freehold" />
+                                    <label for="ht1"><p>Own a house, freehold</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.1146385513" id="ht2" value="Own a house with a mortgage" />
+                                    <label for="ht2"><p>Own a house with a mortgage</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.1146385513" id="ht3" value="Renting" />
+                                    <label for="ht3"><p>Renting</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.1146385513" id="ht4" value="Public housing" />
+                                    <label for="ht4"><p>Public housing</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.1146385513" id="ht5" value="Do not have a house" />
+                                    <label for="ht5"><p>Do not have a house</p></label>
+                                </section>
+
+                                <section class="question">
+                                    <h3 class="qtitle">Is your housing situation affordable?</h3>
+                                    <input type="radio" name="entry.1479609488" id="affordable1" value="Yes" />
+                                    <label for="affordable1"><p>Yes</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.1479609488" id="affordable2" value="No" />
+                                    <label for="affordable2"><p>No</p></label>
+                                </section>
+
+                                <section class="question">
+                                    <h3 class="qtitle">What kind of transport do you use most?</h3>
+                                    <input type="radio" name="entry.1222769296" id="transport1" value="Car" />
+                                    <label for="transport1"><p>Car</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.1222769296" id="transport2" value="Bike" />
+                                    <label for="transport2"><p>Bike</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.1222769296" id="transport3" value="Public Transport" />
+                                    <label for="transport3"><p>Public Transport</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.1222769296" id="transport4" value="Walking" />
+                                    <label for="transport4"><p>Walking</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.1222769296" id="transport5" value="Other" />
+                                    <label for="transport5"><p>Other</p></label>
+                                </section>
+                                
+                                <section class="question">
+                                    <h3 class="qtitle">What is the main transport priority for you in Wellington?</h3>
+                                    <input type="radio" name="entry.1206511522" id="priority1" value="Light Rail" />
+                                    <label for="priority1"><p>Light Rail</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.1206511522" id="priority2" value="Second Tunnel" />
+                                    <label for="priority2"><p>Second Tunnel</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.1206511522" id="priority3" value="Separated Bus and Car Traffic" />
+                                    <label for="priority3"><p>Separated Bus and Car Traffic</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.1206511522" id="priority4" value="Cycling/Walking" />
+                                    <label for="priority4"><p>Cycling/Walking</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.1206511522" id="priority5" value="All of the above" />
+                                    <label for="priority5"><p>All of the above</p></label>
+                                </section>
+
+                                <section class="question">
+                                    <h3 class="qtitle">Do you have further feedback on our infrastructure?</h3>
+                                    <textarea class="textarea" name="entry.466657813" id="infrastructurefeedback"></textarea>
+                                </section>
+
+
+
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+            </section>
+
+            <!-- Fifth Section -->
+            <section title="Personal Details">
+                <!-- Sticky Bit -->
+                <section class="sticky overlay">
+                    <img class="fullwidth sectionimage overlay" src="images/whoarewe.jpg">
+
+                    <!-- Description -->
+                    <section class="container">
+                        <section class="row">
+                            <section class="description col-lg-4 col-md-12 col-sm-12 col-xs-12" title="Description">
+                                <h2>Who are we?</h2>
+                                <p>Everyone has a different experience of their community. With some general questions, I can understand better how Wellington supports different people’s wellbeing differently, and what we need to improve.</p>
+                            </section>
+                        </section>
+                    </section>
+
+                </section>
+
+                <!-- Questions -->
+                <section title="Questions">
+                    <section class="container">
+                        <section class="row">
+                            <section class="col-lg-5"></section>
+
+                            <section class="col-lg-7 col-md-12 col-sm-12 col-xs-12 formcontainer">
+
+                                <section class="question">
+                                    <h3 class="qtitle">How old are you?</h3>
+                                    <input type="radio" name="entry.1606315508" id="age1" value="Under 18" />
+                                    <label for="age1"><p>Under 18</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.1606315508" id="age2" value="18 – 24" />
+                                    <label for="age2"><p>18 – 24</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.1606315508" id="age3" value="25 – 34" />
+                                    <label for="age3"><p>25 – 34</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.1606315508" id="age4" value="Walking" />
+                                    <label for="age4"><p>35 – 49</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.1606315508" id="age5" value="50 – 64" />
+                                    <label for="age5"><p>50 – 64</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.1606315508" id="age6" value="65+" />
+                                    <label for="age6"><p>65+</p></label>
+                                </section>
+
+                                <section class="question">
+                                    <h3 class="qtitle" for="occupation">What is your occupation?</h3>
+                                    <input class="textarea" name="entry.1726333884" type="text" id="occupation" />
+                                </section>
+
+                                <section class="question">
+                                    <h3 class="qtitle" for="suburb">What suburb do you live in?</h3>
+                                    <input class="textarea" name="entry.1141051428" type="text" id="suburb" />
+                                </section>
+
+                                <section class="question">
+                                    <h3 class="qtitle">Who do you normally vote for?</h3>
+                                    <input type="radio" name="entry.2116603557" id="direction1" value="Labour Party" />
+                                    <label for="direction1"><p>Labour Party</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.2116603557" id="direction2" value="New Zealand First" />
+                                    <label for="direction2"><p>New Zealand First</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.2116603557" id="direction3" value="Green Party" />
+                                    <label for="direction3"><p>Green Party</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.2116603557" id="direction4" value="National Party" />
+                                    <label for="direction4"><p>National Party</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.2116603557" id="direction5" value="ACT Party" />
+                                    <label for="direction5"><p>ACT Party</p></label>
+                                    <br>
+                                    <input type="radio" name="entry.2116603557" id="direction6" value="Other" />
+                                    <label for="direction6"><p>Other</p></label>
+                                </section>
+
+                                <section class="question">
+                                    <h3 class="qtitle">Add your email address if you want monthly updates about Wellington Central and the Government.</h3>
+                                    <input class="textarea" name="entry.1340078567" type="text" id="email" />
+                                </section>
+
+
+                                <section class="question">
+                                    <button><h4><input class="button" type="submit" value="Submit"></h4></button>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+            </section>
+
+
+        </section>
+
+    </form>
+
+    <footer>
+        <section class="container footercontent">
+            <section class="row">
+                <a class="col-lg-1 col-md-1 col-sm-2 sociallink" href="https://www.facebook.com/GrantRobertsonLabour/"><img class="social" src="images/facebook.png" alt="Facebook"></a>
+                <a class="col-lg-1 col-md-1 col-sm-2 sociallink" href="https://www.instagram.com/grantrobertsonmp/"><img class="social"  src="images/instagram.png" alt="Instagram"></a>
+                <a class="col-lg-1 col-md-1 col-sm-2 sociallink" href="https://twitter.com/grantrobertson1"><img class="social"  src="images/twitter.png" alt="Twitter"></a>
+                <a class="col-lg-1 col-md-1 col-sm-2 sociallink" href="https://mailchi.mp/5e472553f200/grants-mailing-list"><img class="social" src="images/email.png" alt="Email"></a>
+                <section class="col"></section>
+                <img class=" col-lg-3 col-md-3 col-sm-4" src="images/labourlogo.png">
+
+
+            </section>
+            <p class="footertext">Authorised by Hon Grant Robertson, 220 Willis Street, Wellington.</p>
+
+            <p class="attributions footertext"> Photography courtesy of:
+                <br> “Departure” <a href="https://www.flickr.com/photos/46928881@N02/">Simeon W</a> Licensed under Creative Commons: <a href="https://creativecommons.org/licenses/by/2.0/">By Attribution 2.0 License</a>
+                <br> “Courtenay Place” <a href="https://www.flickr.com/photos/wellingtontrolleybuses/">Andrew Surgenor</a> License under Creative Commons: <a href="https://creativecommons.org/licenses/by-sa/2.0/">ShareAlike Attribution 2.0 License</a></p>
+        </section>
+
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
