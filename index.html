@@ -36,6 +36,34 @@
     <!-- Our stylesheet (aka the most important)-->
     <link rel="stylesheet" href="style/style.css">
 
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '234328813851512');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=234328813851512&ev=PageView&noscript=1"
+/></noscript>
+    <!-- End Facebook Pixel Code -->
+
     <!-- Twitter Support -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@grantrobertson1" />
@@ -369,7 +397,7 @@
                                     <input type="radio" name="entry.1222769296" id="transport5" value="Other" />
                                     <label for="transport5"><p>Other</p></label>
                                 </section>
-                                
+
                                 <section class="question">
                                     <h3 class="qtitle">What is the main transport priority for you in Wellington?</h3>
                                     <input type="radio" name="entry.1206511522" id="priority1" value="Light Rail" />
@@ -509,7 +537,7 @@
                 <a class="col-lg-1 col-md-1 col-sm-2 sociallink" href="https://twitter.com/grantrobertson1"><img class="social"  src="images/twitter.png" alt="Twitter"></a>
                 <a class="col-lg-1 col-md-1 col-sm-2 sociallink" href="https://mailchi.mp/5e472553f200/grants-mailing-list"><img class="social" src="images/email.png" alt="Email"></a>
                 <section class="col"></section>
-                <img class=" col-lg-3 col-md-3 col-sm-4" src="images/labourlogo.png">
+                <img class=" col-lg-3 col-md-3 col-sm-3" src="images/labourlogo.png">
 
 
             </section>
